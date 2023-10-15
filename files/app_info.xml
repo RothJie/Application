@@ -1,7 +1,27 @@
 <app_info>
     <root_app_info>
         <title>SuperAI</title>
-        <width>400</width>
+        <width>800</width>
         <height>600</height>
     </root_app_info>
+
+    <wordsSourceDB>
+        <user>root</user>
+        <password>abc123</password>
+        <port>3306</port>
+        <host>192.168.1.12</host>
+        <dbName>ws_word</dbName>
+    </wordsSourceDB>
+
+    <sql>
+        <show>
+            show tables;
+        </show>
+        <select>
+            select $$clumns$$ from $$tableName$$ limit 0,20;
+        </select>
+        <select_for_words>
+            select $$cols$$ from $$tbl$$ limit $$page$$,$$num$$;
+        </select_for_words>
+    </sql>
 </app_info>
