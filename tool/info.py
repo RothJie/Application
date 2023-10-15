@@ -1,9 +1,10 @@
 import xml.etree.ElementTree as ET
 import re
+from .xml_config import XML
 
 
 class INFO:
-    __info_path = "./files/app_info.xml"
+    __info_path = XML.xml_path
     __xml_root = None
     __special_chr = {">": ";MT;", "<": ";LT;"}
 

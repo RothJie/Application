@@ -20,8 +20,14 @@
         <select>
             select $$clumns$$ from $$tableName$$ limit 0,20;
         </select>
-        <select_for_words>
+        <select_for_words_page>
             select $$cols$$ from $$tbl$$ limit $$page$$,$$num$$;
-        </select_for_words>
+        </select_for_words_page>
+        <decrible_tbl>
+            DESC $$tbl$$;
+        </decrible_tbl>
+        <ws_words_insert>
+            insert into $$tableName$$(id, word, mean) values($$clumns$$);
+        </ws_words_insert>
     </sql>
 </app_info>

@@ -1,6 +1,4 @@
-from tool import conTool
-from tool import INFO
+from extensions import WsWordsMapper as ws
 
-print(INFO.getSql(nsm="select", clumns="*", tableName="ws_words"))
-
-print(INFO.getSql(nsm="select_for_words", tbl="ws_words", cols="id, word, mean", page=2, num=10))
+for uni in ws.selectList():
+    uni.show()
